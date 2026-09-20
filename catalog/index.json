@@ -219,14 +219,34 @@
       "description": "A minimal month-view calendar for keeping day-by-day notes.",
       "publisher": "tenltrs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.1/icon.svg",
-      "tags": [],
+      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.2/icon.svg",
+      "tags": [
+        "calendar",
+        "memo",
+        "notes",
+        "workflow",
+        "to-do"
+      ],
       "permissions": [],
-      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.1",
+      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.2",
       "homepage": "https://github.com/tenltrs/dbx-calendar",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-09-20T15:52:51.616Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.2/com.tenltrs.dbx-calendar-0.1.2-universal.dbxp",
+              "sha256": "d637e9d4b0b27c0888d20a42539f0933459ef5a75dd9c354da67d7f9527c1b05",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32154
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-09-20T10:22:25.843Z",
@@ -376,6 +396,85 @@
         "zh": {
           "name": "LeetCode 刷题",
           "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。"
+        }
+      }
+    },
+    {
+      "id": "io.dbx.docker",
+      "name": "Docker",
+      "description": "Docker Engine workbench: containers, images, volumes, networks, logs, monitoring, container files, an interactive container terminal, and a controlled Compose subset.",
+      "publisher": "ezreal-byte",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.docker/0.1.4/icon.svg",
+      "tags": [
+        "docker",
+        "containers",
+        "compose"
+      ],
+      "permissions": [
+        "host.workbench",
+        "host.binary"
+      ],
+      "source": "https://github.com/Ezreal-byte/dbx-docker-plugin/tree/v0.1.4",
+      "homepage": "https://github.com/Ezreal-byte/dbx-docker-plugin",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.4",
+      "versions": [
+        {
+          "version": "0.1.4",
+          "releasedAt": "2026-09-20T16:10:41.059Z",
+          "releaseNotes": "First DBX Store submission. Adds a Docker Engine connection provider and workbench with container lifecycle, container rename, image pull/push/export, image tagging and per-tag removal, image layer history, live logs, ECharts resource monitoring, read-only container file browsing with download and upload, an interactive container terminal (docker exec over a binary channel), disk usage, and a controlled Compose subset. Cleanup runs in a guarded dialog with a read-only preview and a typed confirmation, and follows Docker CLI defaults. The UI follows the DBX interface language and reuses DBX transport layers instead of building its own SSH tunnel.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.1.4/io.dbx.docker-0.1.4-darwin-arm64.dbxp",
+              "sha256": "1e8b8007f7f5f4a479a705384010b9176a10ec0c6b850bb00a708c5b5bf64348",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6930257
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.1.4/io.dbx.docker-0.1.4-darwin-x64.dbxp",
+              "sha256": "355f2e8d09bff6e74d99f7a9f8a3288362247b608db4d27f8e631b4c606e9c47",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7369268
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.1.4/io.dbx.docker-0.1.4-linux-arm64.dbxp",
+              "sha256": "0ea15876a0e31a387686d55dae50fc4eda403339f1877c2ac052582ebc09ac7a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6607566
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.1.4/io.dbx.docker-0.1.4-linux-x64.dbxp",
+              "sha256": "859ed85b30619b080eb49f53e4361b965537914d21c44439fa7976b6f63aecc3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7180613
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.1.4/io.dbx.docker-0.1.4-windows-x64.dbxp",
+              "sha256": "e144d753210506becf853cfca74866fc736d0f55afbea01965816b0c16695dee",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7392229
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Docker",
+          "description": "Docker Engine 工作台：管理容器、镜像、卷与网络，实时日志、资源监控、容器文件上传下载、容器内交互式终端，以及常用 Compose 子集的应用。"
+        },
+        "en": {
+          "name": "Docker",
+          "description": "Docker Engine workbench: containers, images, volumes, networks, logs, monitoring, container files, an interactive container terminal, and a controlled Compose subset."
+        },
+        "zh": {
+          "name": "Docker",
+          "description": "Docker Engine 工作台：管理容器、镜像、卷与网络，实时日志、资源监控、容器文件上传下载、容器内交互式终端，以及常用 Compose 子集的应用。"
         }
       }
     },
@@ -2077,6 +2176,89 @@
         "en": {
           "name": "XXL-JOB Console",
           "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX."
+        }
+      }
+    },
+    {
+      "id": "io.github.caichangqing1120.prometheus",
+      "name": "Prometheus",
+      "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench.",
+      "publisher": "caichangqing1120",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/icon.svg",
+      "tags": [
+        "prometheus",
+        "monitoring",
+        "observability"
+      ],
+      "permissions": [],
+      "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.6",
+      "homepage": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
+      "license": "MIT",
+      "latestVersion": "0.1.6",
+      "versions": [
+        {
+          "version": "0.1.6",
+          "releasedAt": "2026-09-20T15:57:23.928Z",
+          "releaseNotes": "Add multi-select service discovery browsing. Search only follows the typed keyword, selected services remain independently visible and removable, and targets from up to 20 services are streamed, merged and paginated across active or dropped states.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/io.github.caichangqing1120.prometheus-0.1.6-darwin-arm64.dbxp",
+              "sha256": "b20261fadf80faf8a8a51b6ddcb779019375f3670696ed02dea2a1d1f712c3ec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4492786
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/io.github.caichangqing1120.prometheus-0.1.6-darwin-x64.dbxp",
+              "sha256": "fee1d99574d5cf421702ca2066eb43605b2ab814e0ceeb1185b0aa3d3682f9fc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4719509
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/io.github.caichangqing1120.prometheus-0.1.6-linux-arm64.dbxp",
+              "sha256": "b6de185f21f4bd99b8d384f617314268dab12a3a86bf255e96692ef93d3f8123",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4470797
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/io.github.caichangqing1120.prometheus-0.1.6-linux-x64.dbxp",
+              "sha256": "283c95686b70dbf244e8f474ad1df6b1fb987f97f2017ff9d7840d4156ddb371",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4755465
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/io.github.caichangqing1120.prometheus-0.1.6-windows-arm64.dbxp",
+              "sha256": "7adcbaa82b390646edf3a381a17dc18960da2f5b547567c773b7675ebdedc473",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4465362
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/io.github.caichangqing1120.prometheus-0.1.6-windows-x64.dbxp",
+              "sha256": "032991a2f6208c93a95c48729816c904c6d6034acead28ade02aefacbe106f2a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4788427
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Prometheus",
+          "description": "在 DBX 中使用只读 PromQL 编辑器，并查看采集目标、活动告警、规则和运行状态。"
+        },
+        "en": {
+          "name": "Prometheus",
+          "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench."
+        },
+        "zh": {
+          "name": "Prometheus",
+          "description": "在 DBX 中使用只读 PromQL 编辑器，并查看采集目标、活动告警、规则和运行状态。"
         }
       }
     },
